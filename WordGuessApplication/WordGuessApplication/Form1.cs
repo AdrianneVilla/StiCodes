@@ -46,11 +46,13 @@ namespace WordGuessApplication
             if (textBox1.Text == name.ToString())
             {
                 label1.Text = name.ToString();
+                MessageBox.Show("Correct Guess");
             } else
             {
                 
                     guess = textBox1.Text;
                 listBox1.Items.Add(guess);
+                MessageBox.Show("Wrong Guess!\n Try again!");
                 textBox1.Clear();
             }
 
